@@ -1,6 +1,6 @@
 import React from "react";
-import './loginForm.css'
-import { Link } from 'react-router-dom'
+import './loginForm.css';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
     return(
