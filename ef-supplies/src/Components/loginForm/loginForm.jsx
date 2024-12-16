@@ -1,11 +1,13 @@
 import React from "react";
-import './loginForm.css';
+import logincss from './loginForm.css';
 import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
     return(
+    <div>
+        <link rel="stylesheet" href="loginForm.css"></link>
         <div className='wrapper'>
-            <form action="">
+            <form action="" meathod="get">
                 <h1>Login</h1>
                 <div className= "input-box">
                     <input type="text"
@@ -27,6 +29,7 @@ const LoginPage = () => {
                 </div>
             </form>
         </div>
+    </div>
     );
 };
 

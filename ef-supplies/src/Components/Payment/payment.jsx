@@ -1,6 +1,6 @@
 import React from "react";
 import './Payment.css'
-import cards from './payments.png'
+import cards from '../Assests/payments.png'
 //import { Link } from 'react-router-dom'
 
 const Payment = () => {
