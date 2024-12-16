@@ -2,13 +2,13 @@ import React from "react";
 import logincss from './loginForm.css';
 import { Link } from 'react-router-dom';
 
-const LoginPage = () => {
+const RegisterPage = () => {
     return(
     <div>
         <link rel="stylesheet" href="loginForm.css"></link>
         <div className='wrapper'>
             <form action="" meathod="get">
-                <h1>Login</h1>
+                <h1>Register</h1>
                 <div className= "input-box">
                     <input type="text"
                     placeholder='Username' required></input>
@@ -17,15 +17,16 @@ const LoginPage = () => {
                     <input type="password"
                     placeholder='Password' required></input>
                 </div>
-                <div className= "remember-forget">
-                    <label><input type="checkbox" />Remember me</label>
-                    <a href="#">Forget password?</a>
-                </div>
+                <div className= "input-box">
+                    <input type="email"
+                    placeholder='Email' required></input>
+                </div>  
 
-                <button type="submit">Login</button>
+
+                <button type="submit">Register</button>
 
                 <div className="register-link">
-                    <p>Don't have an account? <a href="/Register">Register</a></p>
+                    <p>Have an account? <a href="/">Login</a></p>
                 </div>
             </form>
         </div>
@@ -33,4 +34,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default RegisterPage;
